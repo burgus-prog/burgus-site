@@ -13,8 +13,8 @@ const mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Burgos d.o.o.",
-  description: "Predstavitvena stran podjetja Burgos d.o.o.",
+  title: "BURGUS d.o.o.",
+  description: "Predstavitvena stran podjetja BURGUS d.o.o.",
 };
 
 export default function RootLayout({
