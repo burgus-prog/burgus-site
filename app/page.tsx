@@ -1,175 +1,196 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
+
+type Lang = "sl" | "en";
+
+const translations = {
+  sl: {
+    navAbout: "O nas",
+    navCapabilities: "Področja",
+    navPartners: "Partnerji",
+    navClients: "Reference",
+    navContact: "Kontakt",
+    ctaInquiry: "Povpraševanje",
+
+    badge: "Tehnologija, izkušnje in zanesljivo sodelovanje",
+    company: "BURGUS d.o.o.",
+    heroTitle1: "Tehnologija in izkušnje",
+    heroTitle2: "za zahtevne projekte.",
+    heroText:
+      "BURGUS d.o.o. združuje strokovno znanje, dolgoletne izkušnje in mednarodno sodelovanje pri dobavi specializirane opreme ter tehnoloških rešitev za institucionalne in druge zahtevne uporabnike.",
+    ctaExplore: "Razišči področja",
+    ctaDownload: "Prenesi predstavitev",
+
+    overviewEyebrow: "Pregled podjetja",
+    overviewTitle: "BURGUS Profile",
+    statExperience: "Izkušnje",
+    statFounded: "Ustanovljeno",
+    statField: "Področje",
+    statReach: "Doseg",
+    statReachValue: "Mednarodno",
+    statYearsValue: "30+ let",
+    direction: "Usmeritev",
+    directionTitle: "Zanesljivost, natančnost, sodelovanje",
+    directionText:
+      "Predstavitev je zasnovana v čistem, sodobnem in umirjenem slogu za poslovno komuniciranje z zahtevnimi partnerji in naročniki.",
+
+    aboutEyebrow: "O podjetju",
+    aboutTitle: "Izkušnje, znanje in dolgoročno sodelovanje.",
+    aboutProfile: "Profil",
+    aboutProfileText:
+      "BURGUS d.o.o. je slovensko podjetje s sedežem v Preserju. Podjetje temelji na dolgoletnem strokovnem znanju, poznavanju trga in sodelovanju z domačimi ter tujimi partnerji na področju specializirane opreme in tehnoloških rešitev.",
+    aboutApproach: "Pristop",
+    aboutApproachText:
+      "Podjetje je usmerjeno v premišljeno izbiro rešitev, zanesljivo izvedbo in dolgoročno sodelovanje z naročniki, proizvajalci ter drugimi strokovnimi partnerji v Sloveniji in tujini.",
+
+    capabilitiesEyebrow: "Področja",
+    capabilitiesTitle: "Strukturiran pregled ključnih področij",
+    capabilitiesText:
+      "Vsebina je razdeljena v jasne vsebinske sklope, ki omogočajo hiter pregled dejavnosti, kompetenc in sodelovanj.",
+
+    capability1Title: "Obrambni program",
+    capability1Text:
+      "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike.",
+    capability2Title: "Counter-UAS sistemi",
+    capability2Text:
+      "Rešitve za zaznavanje, analizo in odziv na grožnje brezpilotnih sistemov v različnih operativnih okoljih.",
+    capability3Title: "Termalne in nadzorne rešitve",
+    capability3Text:
+      "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
+    capability4Title: "Mednarodni projekti",
+    capability4Text:
+      "Podpora pri sodelovanju s tujimi proizvajalci, institucionalnimi naročniki in kompleksnimi tehnološkimi projekti.",
+
+    partnersEyebrow: "Partnerji",
+    partnersTitle: "Mednarodno sodelovanje",
+    partnersText:
+      "Izbor partnerjev predstavlja usmerjenost v kakovost, tehnološko naprednost in dolgoročno sodelovanje.",
+
+    clientsEyebrow: "Reference",
+    clientsTitle: "Zaupanje ključnih sistemov in institucij",
+
+    contactEyebrow: "Kontakt",
+    contactTitle: "Pripravljenost za sodelovanje",
+    phone: "Telefon",
+    email: "E-pošta",
+    website: "Spletna stran",
+    namePlaceholder: "Ime",
+    emailPlaceholder: "E-pošta",
+    messagePlaceholder: "Sporočilo",
+    send: "Pošlji sporočilo",
+    sending: "Pošiljanje...",
+    success: "Sporočilo je bilo uspešno poslano.",
+    error: "Prišlo je do napake pri pošiljanju.",
+    spamError: "Oddaja obrazca ni uspela. Poskusite znova.",
+    menu: "Meni",
+
+    footer:
+      "Corporate website concept for presentation and partnership communication.",
+    rights: "Vse pravice pridržane.",
+    country: "Slovenija",
+  },
+
+  en: {
+    navAbout: "About",
+    navCapabilities: "Capabilities",
+    navPartners: "Partners",
+    navClients: "References",
+    navContact: "Contact",
+    ctaInquiry: "Inquiry",
+
+    badge: "Technology, experience and reliable cooperation",
+    company: "BURGUS d.o.o.",
+    heroTitle1: "Technology and experience",
+    heroTitle2: "for demanding projects.",
+    heroText:
+      "BURGUS d.o.o. combines technical expertise, long-term experience and international cooperation in the supply of specialised equipment and technology solutions for institutional and other demanding users.",
+    ctaExplore: "Explore capabilities",
+    ctaDownload: "Download presentation",
+
+    overviewEyebrow: "Company overview",
+    overviewTitle: "BURGUS Profile",
+    statExperience: "Experience",
+    statFounded: "Founded",
+    statField: "Field",
+    statReach: "Reach",
+    statReachValue: "International",
+    statYearsValue: "30+ years",
+    direction: "Direction",
+    directionTitle: "Reliability, precision, cooperation",
+    directionText:
+      "The presentation is designed in a clean, modern and balanced style for business communication with demanding partners and clients.",
+
+    aboutEyebrow: "About",
+    aboutTitle: "Experience, expertise and long-term cooperation.",
+    aboutProfile: "Profile",
+    aboutProfileText:
+      "BURGUS d.o.o. is a Slovenian company based in Preserje. The company is built on long-standing professional expertise, market knowledge and cooperation with domestic and international partners in the field of specialised equipment and technology solutions.",
+    aboutApproach: "Approach",
+    aboutApproachText:
+      "The company focuses on thoughtful selection of solutions, reliable execution and long-term cooperation with clients, manufacturers and other expert partners in Slovenia and abroad.",
+
+    capabilitiesEyebrow: "Capabilities",
+    capabilitiesTitle: "Structured overview of key areas",
+    capabilitiesText:
+      "The content is divided into clear sections that allow a quick overview of activities, competencies and cooperation.",
+
+    capability1Title: "Defence programme",
+    capability1Text:
+      "Supply of specialised equipment, systems and support solutions for military, police and other institutional users.",
+    capability2Title: "Counter-UAS systems",
+    capability2Text:
+      "Solutions for detection, analysis and response to unmanned system threats in various operational environments.",
+    capability3Title: "Thermal and surveillance solutions",
+    capability3Text:
+      "Thermal devices, surveillance systems and equipment for observation, protection and safeguarding of critical infrastructure.",
+    capability4Title: "International projects",
+    capability4Text:
+      "Support in cooperation with foreign manufacturers, institutional clients and complex technology projects.",
+
+    partnersEyebrow: "Partners",
+    partnersTitle: "International cooperation",
+    partnersText:
+      "The selection of partners reflects a focus on quality, technological advancement and long-term cooperation.",
+
+    clientsEyebrow: "References",
+    clientsTitle: "Trusted by key systems and institutions",
+
+    contactEyebrow: "Contact",
+    contactTitle: "Ready for cooperation",
+    phone: "Phone",
+    email: "Email",
+    website: "Website",
+    namePlaceholder: "Name",
+    emailPlaceholder: "Email",
+    messagePlaceholder: "Message",
+    send: "Send message",
+    sending: "Sending...",
+    success: "Your message has been sent successfully.",
+    error: "There was an error sending your message.",
+    spamError: "Form submission failed. Please try again.",
+    menu: "Menu",
+
+    footer:
+      "Corporate website concept for presentation and partnership communication.",
+    rights: "All rights reserved.",
+    country: "Slovenia",
+  },
+} as const;
 
 export default function BurgusWebsite() {
-  const [lang, setLang] = useState<"sl" | "en">("sl");
+  const [lang, setLang] = useState<Lang>("sl");
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const translations = {
-    sl: {
-      navAbout: "O nas",
-      navCapabilities: "Področja",
-      navPartners: "Partnerji",
-      navClients: "Reference",
-      navContact: "Kontakt",
-      ctaInquiry: "Povpraševanje",
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-      badge: "Tehnologija, izkušnje in zanesljivo sodelovanje",
-      company: "BURGUS d.o.o.",
-      heroTitle1: "Tehnologija in izkušnje",
-      heroTitle2: "za zahtevne projekte.",
-      heroText:
-        "BURGUS d.o.o. združuje strokovno znanje, dolgoletne izkušnje in mednarodno sodelovanje pri dobavi specializirane opreme ter tehnoloških rešitev za institucionalne in druge zahtevne uporabnike.",
-      ctaExplore: "Razišči področja",
-      ctaDownload: "Prenesi predstavitev",
-
-      overviewEyebrow: "Pregled podjetja",
-      overviewTitle: "BURGUS Profile",
-      statExperience: "Izkušnje",
-      statFounded: "Ustanovljeno",
-      statField: "Področje",
-      statReach: "Doseg",
-      statReachValue: "Mednarodno",
-      statYearsValue: "30+ let",
-      direction: "Usmeritev",
-      directionTitle: "Zanesljivost, natančnost, sodelovanje",
-      directionText:
-        "Predstavitev je zasnovana v čistem, sodobnem in umirjenem slogu za poslovno komuniciranje z zahtevnimi partnerji in naročniki.",
-
-      aboutEyebrow: "O podjetju",
-      aboutTitle: "Izkušnje, znanje in dolgoročno sodelovanje.",
-      aboutProfile: "Profil",
-      aboutProfileText:
-        "BURGUS d.o.o. je slovensko podjetje s sedežem v Preserju. Podjetje temelji na dolgoletnem strokovnem znanju, poznavanju trga in sodelovanju z domačimi ter tujimi partnerji na področju specializirane opreme in tehnoloških rešitev.",
-      aboutApproach: "Pristop",
-      aboutApproachText:
-        "Podjetje je usmerjeno v premišljeno izbiro rešitev, zanesljivo izvedbo in dolgoročno sodelovanje z naročniki, proizvajalci ter drugimi strokovnimi partnerji v Sloveniji in tujini.",
-
-      capabilitiesEyebrow: "Področja",
-      capabilitiesTitle: "Strukturiran pregled ključnih področij",
-      capabilitiesText:
-        "Vsebina je razdeljena v jasne vsebinske sklope, ki omogočajo hiter pregled dejavnosti, kompetenc in sodelovanj.",
-
-      capability1Title: "Obrambni program",
-      capability1Text:
-        "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike.",
-      capability2Title: "Counter-UAS sistemi",
-      capability2Text:
-        "Rešitve za zaznavanje, analizo in odziv na grožnje brezpilotnih sistemov v različnih operativnih okoljih.",
-      capability3Title: "Termalne in nadzorne rešitve",
-      capability3Text:
-        "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
-      capability4Title: "Mednarodni projekti",
-      capability4Text:
-        "Podpora pri sodelovanju s tujimi proizvajalci, institucionalnimi naročniki in kompleksnimi tehnološkimi projekti.",
-
-      partnersEyebrow: "Partnerji",
-      partnersTitle: "Mednarodno sodelovanje",
-      partnersText:
-        "Izbor partnerjev predstavlja usmerjenost v kakovost, tehnološko naprednost in dolgoročno sodelovanje.",
-
-      clientsEyebrow: "Reference",
-      clientsTitle: "Zaupanje ključnih sistemov in institucij",
-
-      contactEyebrow: "Kontakt",
-      contactTitle: "Pripravljenost za sodelovanje",
-      phone: "Telefon",
-      email: "E-pošta",
-      website: "Spletna stran",
-      namePlaceholder: "Ime",
-      emailPlaceholder: "E-pošta",
-      messagePlaceholder: "Sporočilo",
-      send: "Pošlji sporočilo",
-
-      footer:
-        "Corporate website concept for presentation and partnership communication.",
-      rights: "Vse pravice pridržane.",
-      country: "Slovenija",
-      menu: "Meni",
-    },
-    en: {
-      navAbout: "About",
-      navCapabilities: "Capabilities",
-      navPartners: "Partners",
-      navClients: "References",
-      navContact: "Contact",
-      ctaInquiry: "Inquiry",
-
-      badge: "Technology, experience and reliable cooperation",
-      company: "BURGUS d.o.o.",
-      heroTitle1: "Technology and experience",
-      heroTitle2: "for demanding projects.",
-      heroText:
-        "BURGUS d.o.o. combines technical expertise, long-term experience and international cooperation in the supply of specialised equipment and technology solutions for institutional and other demanding users.",
-      ctaExplore: "Explore capabilities",
-      ctaDownload: "Download presentation",
-
-      overviewEyebrow: "Company overview",
-      overviewTitle: "BURGUS Profile",
-      statExperience: "Experience",
-      statFounded: "Founded",
-      statField: "Field",
-      statReach: "Reach",
-      statReachValue: "International",
-      statYearsValue: "30+ years",
-      direction: "Direction",
-      directionTitle: "Reliability, precision, cooperation",
-      directionText:
-        "The presentation is designed in a clean, modern and balanced style for business communication with demanding partners and clients.",
-
-      aboutEyebrow: "About",
-      aboutTitle: "Experience, expertise and long-term cooperation.",
-      aboutProfile: "Profile",
-      aboutProfileText:
-        "BURGUS d.o.o. is a Slovenian company based in Preserje. The company is built on long-standing professional expertise, market knowledge and cooperation with domestic and international partners in the field of specialised equipment and technology solutions.",
-      aboutApproach: "Approach",
-      aboutApproachText:
-        "The company focuses on thoughtful selection of solutions, reliable execution and long-term cooperation with clients, manufacturers and other expert partners in Slovenia and abroad.",
-
-      capabilitiesEyebrow: "Capabilities",
-      capabilitiesTitle: "Structured overview of key areas",
-      capabilitiesText:
-        "The content is divided into clear sections that allow a quick overview of activities, competencies and cooperation.",
-
-      capability1Title: "Defence programme",
-      capability1Text:
-        "Supply of specialised equipment, systems and support solutions for military, police and other institutional users.",
-      capability2Title: "Counter-UAS systems",
-      capability2Text:
-        "Solutions for detection, analysis and response to unmanned system threats in various operational environments.",
-      capability3Title: "Thermal and surveillance solutions",
-      capability3Text:
-        "Thermal devices, surveillance systems and equipment for observation, protection and safeguarding of critical infrastructure.",
-      capability4Title: "International projects",
-      capability4Text:
-        "Support in cooperation with foreign manufacturers, institutional clients and complex technology projects.",
-
-      partnersEyebrow: "Partners",
-      partnersTitle: "International cooperation",
-      partnersText:
-        "The selection of partners reflects a focus on quality, technological advancement and long-term cooperation.",
-
-      clientsEyebrow: "References",
-      clientsTitle: "Trusted by key systems and institutions",
-
-      contactEyebrow: "Contact",
-      contactTitle: "Ready for cooperation",
-      phone: "Phone",
-      email: "Email",
-      website: "Website",
-      namePlaceholder: "Name",
-      emailPlaceholder: "Email",
-      messagePlaceholder: "Message",
-      send: "Send message",
-
-      footer:
-        "Corporate website concept for presentation and partnership communication.",
-      rights: "All rights reserved.",
-      country: "Slovenia",
-      menu: "Menu",
-    },
-  };
+  // anti-spam
+  const [websiteField, setWebsiteField] = useState("");
+  const [formStartedAt, setFormStartedAt] = useState<number>(() => Date.now());
 
   const t = translations[lang];
 
@@ -197,6 +218,47 @@ export default function BurgusWebsite() {
   ];
 
   const closeMenu = () => setMenuOpen(false);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setStatus("");
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          websiteField,
+          formStartedAt,
+          lang,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus(t.success);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setWebsiteField("");
+        setFormStartedAt(Date.now());
+      } else {
+        setStatus(data?.error || t.error);
+      }
+    } catch {
+      setStatus(t.error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#f7f0e6] text-slate-900">
@@ -262,6 +324,7 @@ export default function BurgusWebsite() {
           <div className="hidden items-center gap-3 md:flex">
             <div className="rounded-full border border-black/10 bg-white/70 p-1">
               <button
+                type="button"
                 onClick={() => setLang("sl")}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                   lang === "sl" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
@@ -270,6 +333,7 @@ export default function BurgusWebsite() {
                 SL
               </button>
               <button
+                type="button"
                 onClick={() => setLang("en")}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                   lang === "en" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
@@ -319,7 +383,11 @@ export default function BurgusWebsite() {
               <a href="#about" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
                 {t.navAbout}
               </a>
-              <a href="#capabilities" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
+              <a
+                href="#capabilities"
+                onClick={closeMenu}
+                className="text-sm font-medium hover:text-[#cf6f12]"
+              >
                 {t.navCapabilities}
               </a>
               <a href="#partners" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
@@ -335,6 +403,7 @@ export default function BurgusWebsite() {
               <div className="mt-2 flex items-center gap-3">
                 <div className="rounded-full border border-black/10 bg-white/70 p-1">
                   <button
+                    type="button"
                     onClick={() => setLang("sl")}
                     className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                       lang === "sl" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
@@ -343,6 +412,7 @@ export default function BurgusWebsite() {
                     SL
                   </button>
                   <button
+                    type="button"
                     onClick={() => setLang("en")}
                     className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                       lang === "en" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
@@ -623,35 +693,61 @@ export default function BurgusWebsite() {
             </div>
 
             <form
+              onSubmit={handleSubmit}
               className="rounded-[2rem] border border-black/10 bg-white/90 p-8 shadow-sm"
               autoComplete="off"
             >
+              <div className="hidden" aria-hidden="true">
+                <label htmlFor="website-field">Website</label>
+                <input
+                  id="website-field"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={websiteField}
+                  onChange={(e) => setWebsiteField(e.target.value)}
+                />
+              </div>
+
               <div className="grid gap-5 md:grid-cols-2">
                 <input
-                  autoComplete="off"
+                  type="text"
+                  autoComplete="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[#cf6f12]"
                   placeholder={t.namePlaceholder}
+                  required
                 />
                 <input
-                  autoComplete="off"
+                  type="email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[#cf6f12]"
                   placeholder={t.emailPlaceholder}
+                  required
                 />
               </div>
 
               <textarea
                 rows={6}
-                autoComplete="off"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="mt-5 w-full rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[#cf6f12]"
                 placeholder={t.messagePlaceholder}
+                required
               />
 
               <button
-                type="button"
-                className="mt-5 rounded-full bg-[#cf6f12] px-7 py-3.5 font-semibold text-white transition hover:bg-[#b85f0b]"
+                type="submit"
+                disabled={isSubmitting}
+                className="mt-5 rounded-full bg-[#cf6f12] px-7 py-3.5 font-semibold text-white transition hover:bg-[#b85f0b] disabled:cursor-not-allowed disabled:opacity-70"
               >
-                {t.send}
+                {isSubmitting ? t.sending : t.send}
               </button>
+
+              {status && <p className="mt-4 text-sm text-slate-600">{status}</p>}
             </form>
           </div>
         </div>
