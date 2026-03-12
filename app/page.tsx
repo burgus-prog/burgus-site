@@ -13,7 +13,7 @@ const translations = {
     navContact: "Kontakt",
     ctaInquiry: "Povpraševanje",
 
-    badge: "Tehnologija, izkušnje in zanesljivo sodelovanje",
+    badge: "Tehnologija, izkušnje in zanesljivo partnerstvo",
     company: "BURGUS d.o.o.",
     heroTitle1: "Tehnologija in izkušnje",
     heroTitle2: "za zahtevne projekte.",
