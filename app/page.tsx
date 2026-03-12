@@ -54,7 +54,7 @@ const translations = {
       "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike.",
     capability2Title: "Counter-UAS sistemi",
     capability2Text:
-      "Rešitve za zaznavanje, analizo in odziv na grožnje brezpilotnih sistemov v različnih operativnih okoljih.",
+      "Aaronia je tehnološko podjetje, specializirano za napredne sisteme za zaznavanje in spremljanje brezpilotnih letalnikov. Njihove rešitve omogočajo zanesljivo odkrivanje, analizo in nadzor dronskih aktivnosti ter predstavljajo pomemben element sodobnih sistemov za protidronsko zaščito. Droptec razvija napredne tehnologije za nevtralizacijo brezpilotnih sistemov in zaščito zračnega prostora. Njihove rešitve omogočajo učinkovito omejevanje ali onemogočanje delovanja dronov ter dopolnjujejo celovite sisteme za protidronsko zaščito.",
     capability3Title: "Termalne in nadzorne rešitve",
     capability3Text:
       "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
