@@ -15,10 +15,10 @@ const translations = {
 
     badge: "Tehnologija, izkušnje in zanesljivo partnerstvo",
     company: "BURGUS d.o.o.",
-    heroTitle1: "Tehnologija in izkušnje",
+    heroTitle1: "Tehnologija, izkušnje in zanesljivo partnerstvo",
     heroTitle2: "za zahtevne projekte.",
     heroText:
-      "BURGUS d.o.o. zagotavlja napredne tehnološke in varnostne rešitve za zahtevne uporabnike. V sodelovanju z vodilnimi mednarodnimi partnerji omogočamo dostop do specializirane opreme ter sodobnih sistemov, vključno z rešitvami za protidronsko zaščito, zaznavanje in nevtralizacijo brezpilotnih sistemov. Naš pristop temelji na strokovnosti, zanesljivosti in razumevanju specifičnih potreb naročnikov.",
+      "Napredne tehnološke in varnostne rešitve, razvite v sodelovanju z vodilnimi mednarodnimi partnerji.",
     ctaExplore: "Razišči področja",
     ctaDownload: "Prenesi predstavitev",
 
@@ -42,7 +42,7 @@ const translations = {
       "BURGUS d.o.o. je slovensko podjetje s sedežem v Kamniku pod Krimom. Podjetje temelji na dolgoletnem strokovnem znanju, poznavanju trga in sodelovanju z domačimi ter tujimi partnerji na področju specializirane opreme in tehnoloških rešitev.",
     aboutApproach: "Pristop",
     aboutApproachText:
-      "Podjetje je usmerjeno v premišljeno izbiro rešitev, zanesljivo izvedbo in dolgoročno sodelovanje z naročniki, proizvajalci ter drugimi strokovnimi partnerji v Sloveniji in tujini.",
+      "BURGUS d.o.o. zagotavlja napredne tehnološke in varnostne rešitve za zahtevne uporabnike. V sodelovanju z vodilnimi mednarodnimi proizvajalci omogočamo dostop do specializirane opreme ter sodobnih sistemov, vključno z rešitvami za protidronsko zaščito, zaznavanje in nevtralizacijo brezpilotnih sistemov. Naš pristop temelji na strokovnosti, zanesljivosti in razumevanju specifičnih potreb naročnikov v Sloveniji in tujini.",
 
     capabilitiesEyebrow: "Področja",
     capabilitiesTitle: "Strukturiran pregled ključnih področij",
