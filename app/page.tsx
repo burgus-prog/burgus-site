@@ -213,7 +213,6 @@ export default function BurgusWebsite() {
     "Ministry of Defense of Slovenia",
     "Civil Defence of Slovenia",
     "Nuclear Power Plant Krško",
-    "Luka Koper",
     "Ministry of Defence of Croatia",
   ];
 
