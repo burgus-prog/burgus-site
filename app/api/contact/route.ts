@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "BURGUS Contact <onboarding@resend.dev>",
-      to: ["info@burgus.si"],
+      to: ["burgus@siol.net"],
       replyTo: email,
       subject: `Novo povpraševanje - ${name}`,
       text: `
