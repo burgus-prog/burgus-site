@@ -18,7 +18,11 @@ const translations = {
     heroTitle1: "Tehnologija, izkušnje in zanesljivo partnerstvo",
     heroTitle2: "za zahtevne projekte.",
     heroText:
-      "Napredne tehnološke in varnostne rešitve, razvite v sodelovanju z vodilnimi mednarodnimi partnerji.",
+      "Napredne tehnološke in varnostne rešitve, razvite v sodelovanju z vodilnimi mednarodnimi partnerji. Aaronia je tehnološko podjetje, specializirano za napredne sisteme za zaznavanje in spremljanje brezpilotnih letalnikov. Njihove rešitve omogočajo zanesljivo odkrivanje, analizo in nadzor dronskih aktivnosti ter predstavljajo pomemben element sodobnih sistemov za protidronsko zaščito.
+
+DROPTEC
+
+Droptec razvija napredne tehnologije za nevtralizacijo brezpilotnih sistemov in zaščito zračnega prostora. Njihove rešitve omogočajo učinkovito omejevanje ali onemogočanje delovanja dronov ter dopolnjujejo celovite sisteme za protidronsko zaščito.",
     ctaExplore: "Razišči področja",
     ctaDownload: "Prenesi predstavitev",
 
