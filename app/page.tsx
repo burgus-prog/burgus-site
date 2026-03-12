@@ -54,7 +54,7 @@ const translations = {
       "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike.",
     capability2Title: "Counter-UAS sistemi",
     capability2Text:
-      "Aaronia je tehnološko podjetje, specializirano za napredne sisteme za zaznavanje in spremljanje brezpilotnih letalnikov. Njihove rešitve omogočajo zanesljivo odkrivanje, analizo in nadzor dronskih aktivnosti ter predstavljajo pomemben element sodobnih sistemov za protidronsko zaščito. Droptec razvija napredne tehnologije za nevtralizacijo brezpilotnih sistemov in zaščito zračnega prostora. Njihove rešitve omogočajo učinkovito omejevanje ali onemogočanje delovanja dronov ter dopolnjujejo celovite sisteme za protidronsko zaščito.",
+      "Sodelujemo z uveljavljenimi mednarodnimi podjetji, ki razvijajo napredne tehnološke rešitve na področju varnosti, nadzora in zaščite pred brezpilotnimi sistemi. Našim naročnikom omogočamo dostop do preverjenih tehnologij ter strokovno podporo pri njihovi uvedbi.",
     capability3Title: "Termalne in nadzorne rešitve",
     capability3Text:
       "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
@@ -65,7 +65,7 @@ const translations = {
     partnersEyebrow: "Partnerji",
     partnersTitle: "Mednarodno sodelovanje",
     partnersText:
-      "Izbor partnerjev predstavlja usmerjenost v kakovost, tehnološko naprednost in dolgoročno sodelovanje.",
+      "Izbor partnerjev predstavlja usmerjenost v kakovost, tehnološko naprednost in dolgoročno sodelovanje. Aaronia je tehnološko podjetje, specializirano za napredne sisteme za zaznavanje in spremljanje brezpilotnih letalnikov. Njihove rešitve omogočajo zanesljivo odkrivanje, analizo in nadzor dronskih aktivnosti ter predstavljajo pomemben element sodobnih sistemov za protidronsko zaščito. Droptec razvija napredne tehnologije za nevtralizacijo brezpilotnih sistemov in zaščito zračnega prostora. Njihove rešitve omogočajo učinkovito omejevanje ali onemogočanje delovanja dronov ter dopolnjujejo celovite sisteme za protidronsko zaščito.",
 
     clientsEyebrow: "Reference",
     clientsTitle: "Zaupanje ključnih sistemov in institucij",
