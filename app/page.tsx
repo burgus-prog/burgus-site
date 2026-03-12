@@ -60,7 +60,7 @@ const translations = {
       "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
     capability4Title: "Mednarodni projekti",
     capability4Text:
-      "Podpora pri sodelovanju s tujimi proizvajalci, institucionalnimi naročniki in kompleksnimi tehnološkimi projekti.",
+      "Strokovna podpora pri sodelovanju z vodilnimi mednarodnimi proizvajalci ter pri načrtovanju in izvedbi zahtevnih tehnoloških projektov.",
 
     partnersEyebrow: "Partnerji",
     partnersTitle: "Mednarodno sodelovanje",
