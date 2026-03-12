@@ -18,7 +18,7 @@ const translations = {
     heroTitle1: "Tehnologija in izkušnje",
     heroTitle2: "za zahtevne projekte.",
     heroText:
-      "BURGUS d.o.o. združuje strokovno znanje, dolgoletne izkušnje in mednarodno sodelovanje pri dobavi specializirane opreme ter tehnoloških rešitev za institucionalne in druge zahtevne uporabnike.",
+      "BURGUS d.o.o. zagotavlja napredne tehnološke in varnostne rešitve za zahtevne uporabnike. V sodelovanju z vodilnimi mednarodnimi partnerji omogočamo dostop do specializirane opreme ter sodobnih sistemov, vključno z rešitvami za protidronsko zaščito, zaznavanje in nevtralizacijo brezpilotnih sistemov. Naš pristop temelji na strokovnosti, zanesljivosti in razumevanju specifičnih potreb naročnikov.",
     ctaExplore: "Razišči področja",
     ctaDownload: "Prenesi predstavitev",
 
