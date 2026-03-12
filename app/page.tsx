@@ -39,7 +39,7 @@ const translations = {
     aboutTitle: "Izkušnje, znanje in dolgoročno sodelovanje.",
     aboutProfile: "Profil",
     aboutProfileText:
-      "BURGUS d.o.o. je slovensko podjetje s sedežem v Preserju. Podjetje temelji na dolgoletnem strokovnem znanju, poznavanju trga in sodelovanju z domačimi ter tujimi partnerji na področju specializirane opreme in tehnoloških rešitev.",
+      "BURGUS d.o.o. je slovensko podjetje s sedežem v Kamniku pod Krimom. Podjetje temelji na dolgoletnem strokovnem znanju, poznavanju trga in sodelovanju z domačimi ter tujimi partnerji na področju specializirane opreme in tehnoloških rešitev.",
     aboutApproach: "Pristop",
     aboutApproachText:
       "Podjetje je usmerjeno v premišljeno izbiro rešitev, zanesljivo izvedbo in dolgoročno sodelovanje z naročniki, proizvajalci ter drugimi strokovnimi partnerji v Sloveniji in tujini.",
@@ -125,7 +125,7 @@ const translations = {
     aboutTitle: "Experience, expertise and long-term cooperation.",
     aboutProfile: "Profile",
     aboutProfileText:
-      "BURGUS d.o.o. is a Slovenian company based in Preserje. The company is built on long-standing professional expertise, market knowledge and cooperation with domestic and international partners in the field of specialised equipment and technology solutions.",
+      "BURGUS d.o.o. is a Slovenian company based in Kamniku pod Krimom. The company is built on long-standing professional expertise, market knowledge and cooperation with domestic and international partners in the field of specialised equipment and technology solutions.",
     aboutApproach: "Approach",
     aboutApproachText:
       "The company focuses on thoughtful selection of solutions, reliable execution and long-term cooperation with clients, manufacturers and other expert partners in Slovenia and abroad.",
