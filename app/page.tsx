@@ -197,7 +197,7 @@ export default function BurgusWebsite() {
   const partners = [
     { name: "Aaronia", logo: "/partners/aaronia.png", url: "https://aaronia.com" },
     { name: "ActInBlack", logo: "/partners/actinblack.png", url: "https://actinblack.com" },
-    { name: "Saes", logo: "/partners/saes.png", url: "https://electronica-submarina.com/en/innovation/identity-and-branding/" },
+    { name: "Saes", logo: "/partners/saes1.png", url: "https://electronica-submarina.com/en/innovation/identity-and-branding/" },
     { name: "Droptec", logo: "/partners/droptec.png", url: "https://droptec.ch" },
   ];
 
