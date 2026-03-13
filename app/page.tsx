@@ -439,6 +439,15 @@ export default function BurgusWebsite() {
         id="top"
         className="relative isolate border-b border-black/10 bg-[radial-gradient(circle_at_top_right,rgba(255,153,51,0.18),transparent_26%),linear-gradient(135deg,#faf5ee_0%,#f1e4ce_55%,#f7f0e6_100%)]"
       >
+        <div
+  className="absolute inset-0 opacity-5"
+  style={{
+    backgroundImage: "url('/burgus-shield.png')",
+    backgroundRepeat: "repeat",
+    backgroundSize: "80px"
+  }}
+></div>
+
         <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:44px_44px] opacity-30" />
         <div className="absolute -right-24 top-16 h-80 w-80 rounded-full bg-[#ff9e3d]/20 blur-3xl" />
         <div className="absolute left-[-5rem] top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-white/70 blur-3xl" />
