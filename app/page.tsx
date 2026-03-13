@@ -292,7 +292,7 @@ export default function BurgusWebsite() {
       <header className="sticky top-0 z-40 border-b border-black/10 bg-[#f7f0e6]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center gap-3" onClick={closeMenu}>
-            <img src="/logo-burgus.png" alt="BURGUS logo" className="h-20 w-auto" />
+            <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-20 w-auto" />
             <div>
               <p className="text-2xl font-bold tracking-[0.25em] text-[#cf6f12]">
                 BURGUS
@@ -501,7 +501,7 @@ export default function BurgusWebsite() {
 
                     <div className="flex justify-center">
                       <img
-                        src="/logo-burgus.png"
+                        src="/burgus-logo-960.png"
                         alt="BURGUS logo"
                         className="h-20 w-auto"
                       />
@@ -662,7 +662,7 @@ export default function BurgusWebsite() {
           <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
             <div className="rounded-[2rem] border border-black/10 bg-white/90 p-8 shadow-sm">
               <div className="flex items-center gap-4">
-                <img src="/logo-burgus.png" alt="BURGUS logo" className="h-24 w-auto" />
+                <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-24 w-auto" />
                 <p className="text-sm font-semibold tracking-[0.35em] text-[#cf6f12]">
                   WE MEET YOUR NEEDS
                 </p>
