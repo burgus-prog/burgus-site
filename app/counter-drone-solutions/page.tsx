@@ -290,7 +290,9 @@ export default function BurgusWebsite() {
       <div className="pointer-events-none fixed inset-0 -z-10 bg-white/20" />
 
       <header className="sticky top-0 z-40 border-b border-black/10 bg-[#f7f0e6]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
+       <a href="/counter-drone-solutions">Področja</a>
+        >
           <a href="#top" className="flex items-center gap-3" onClick={closeMenu}>
             <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-20 w-auto" />
             <div>
