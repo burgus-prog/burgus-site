@@ -104,7 +104,7 @@ const translations = {
     heroTitle1: "Technology and experience",
     heroTitle2: "for demanding projects.",
     heroText:
-      "BURGUS d.o.o. combines technical expertise, long-term experience and international cooperation in the supply of specialised equipment and technology solutions for institutional and other demanding users.",
+      "BURGUS d.o.o. combines Advanced technological and security solutions developed in collaboration with leading international partners. Aaronia is a technology company specializing in advanced systems for detecting, monitoring and disabling drones. Droptec offers a system for kinetic neutralization of drones. Their solutions enable effective limitation or disabling of drone operations and complement comprehensive anti-drone protection systems.",
     ctaExplore: "Explore capabilities",
     ctaDownload: "Download presentation",
 
