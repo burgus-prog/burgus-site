@@ -468,7 +468,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               {t.heroTitle2}
             </h1>
 
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
+            <p className="mt-8 max-w-2xl text-lg leading-8 text-[var(--brand-muted)] md:text-xl">
               {t.heroText}
             </p>
 
@@ -569,7 +569,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
                 {t.aboutProfile}
               </p>
-              <p className="mt-5 leading-8 text-slate-600">{t.aboutProfileText}</p>
+              <p className="mt-5 leading-8 text-[var(--brand-muted)]">{t.aboutProfileText}</p>
             </div>
 
             <div className="rounded-[2rem] border border-black/10 bg-white p-8 shadow-sm">
