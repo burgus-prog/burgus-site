@@ -260,7 +260,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 };
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-[#f7f0e6] text-slate-900">
+    <div className="relative min-h-screen overflow-x-hidden bg-[var(--brand-bg)] text-slate-900">
       <div className="pointer-events-none fixed inset-0 -z-20 bg-[radial-gradient(circle_at_top_right,rgba(255,153,51,0.14),transparent_28%),linear-gradient(180deg,rgba(255,149,0,0.03),rgba(255,149,0,0.01))]" />
 
       <div
@@ -288,7 +288,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
       <div className="pointer-events-none fixed inset-0 -z-10 bg-white/20" />
 
-      <header className="sticky top-0 z-40 border-b border-black/10 bg-[#f7f0e6]/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-black/10 bg-[var(--brand-bg)]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 <a href="#top" className="flex items-center gap-3" onClick={closeMenu}>
             <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-20 w-auto" />
@@ -377,7 +377,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         </div>
 
         {menuOpen && (
-          <div className="border-t border-black/10 bg-[#f7f0e6]/95 px-6 py-5 md:hidden">
+          <div className="border-t border-black/10 bg-[var(--brand-bg)]/95 px-6 py-5 md:hidden">
             <div className="mx-auto flex max-w-7xl flex-col gap-4">
               <a href="#about" onClick={closeMenu} className="text-sm font-medium hover:text-[var(--brand-orange)]">
                 {t.navAbout}
@@ -436,7 +436,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
       <section
         id="top"
-        className="relative isolate border-b border-black/10 bg-[radial-gradient(circle_at_top_right,rgba(255,153,51,0.18),transparent_26%),linear-gradient(135deg,#faf5ee_0%,#f1e4ce_55%,#f7f0e6_100%)]"
+        className="relative isolate border-b border-black/10 bg-[radial-gradient(circle_at_top_right,rgba(255,153,51,0.18),transparent_26%),linear-gradient(135deg,#faf5ee_0%,#f1e4ce_55%,var(--brand-bg)_100%)]"
       >
         <div
   className="absolute inset-0 opacity-5"
@@ -453,7 +453,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-[1.08fr_0.92fr] md:py-32">
           <div className="flex flex-col justify-center">
-            <div className="mb-6 inline-flex w-fit items-center gap-3 rounded-full border border-black/10 bg-white/75 px-4 py-2 text-sm text-slate-700 shadow-sm backdrop-blur">
+            <div className="mb-6 inline-flex w-fit items-center gap-3 rounded-full border border-black/10 bg-white/75 px-4 py-2 text-sm text-[var(--brand-dark)] shadow-sm backdrop-blur">
               <img src="/burgus-shield.png" alt="BURGUS shield" className="h-10 w-auto" />
               <span>{t.badge}</span>
             </div>
@@ -658,7 +658,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                   key={client}
                   className="rounded-[1.5rem] border border-black/10 bg-white/90 p-5 shadow-sm"
                 >
-                  <p className="font-medium leading-7 text-slate-700">{client}</p>
+                  <p className="font-medium leading-7 text-[var(--brand-dark)]">{client}</p>
                 </div>
               ))}
             </div>
