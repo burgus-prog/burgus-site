@@ -465,6 +465,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
             <h1 className="mt-4 max-w-4xl text-5xl font-black leading-[1.03] tracking-tight md:text-7xl">
               {t.heroTitle1}
               <br />
+
               {t.heroTitle2}
             </h1>
 
@@ -499,7 +500,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 <div className="border-b border-white/10 pb-8">
                   <div className="grid items-center gap-6 text-center md:grid-cols-[1fr_auto_1fr] md:text-left">
                     <div className="flex flex-col justify-center">
-                      <p className="text-xs uppercase tracking-[0.28em] text-white/55">
+                      <p className="text-xs uppercase tracking-[0.28em] text-[var(--brand-orange-soft)]">
                         {t.overviewEyebrow}
                       </p>
                       <p className="mt-3 text-3xl font-semibold leading-tight">
