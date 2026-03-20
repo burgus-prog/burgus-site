@@ -1,1 +1,1 @@
-https://www.burgus.si/counter-drone-solutions
+export { default } from "./counter-drone-solutions/page";
