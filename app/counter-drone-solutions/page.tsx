@@ -242,7 +242,7 @@ export default function BurgusWebsite() {
       });
 
       const data = await response.json();
-
+     try {
       if (response.ok) {
         setStatus(t.success);
         setName("");
@@ -260,6 +260,7 @@ export default function BurgusWebsite() {
     }
   };
 
+  return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#f7f0e6] text-slate-900">
       <div className="pointer-events-none fixed inset-0 -z-20 bg-[radial-gradient(circle_at_top_right,rgba(255,153,51,0.14),transparent_28%),linear-gradient(180deg,rgba(255,149,0,0.03),rgba(255,149,0,0.01))]" />
 
