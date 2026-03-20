@@ -219,46 +219,45 @@ export default function BurgusWebsite() {
 
   const closeMenu = () => setMenuOpen(false);
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    setStatus("");
-    setIsSubmitting(true);
+  setStatus("");
+  setIsSubmitting(true);
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-          websiteField,
-          formStartedAt,
-          lang,
-        }),
-      });
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+        websiteField,
+        formStartedAt,
+      }),
+    });
 
-      const data = await response.json();
-     try {
-      if (response.ok) {
-        setStatus(t.success);
-        setName("");
-        setEmail("");
-        setMessage("");
-        setWebsiteField("");
-        setFormStartedAt(Date.now());
-      } else {
-        setStatus(data?.error || t.error);
-      }
-    } catch {
-      setStatus(t.error);
-    } finally {
-      setIsSubmitting(false);
+    const data = await response.json();
+
+    if (response.ok) {
+      setStatus(t.success);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setWebsiteField("");
+      setFormStartedAt(Date.now());
+    } else {
+      setStatus(data?.error || t.error);
     }
-  };
+  } catch {
+    setStatus(t.error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#f7f0e6] text-slate-900">
