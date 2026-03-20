@@ -293,29 +293,29 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 <a href="#top" className="flex items-center gap-3" onClick={closeMenu}>
             <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-20 w-auto" />
             <div>
-              <p className="text-2xl font-bold tracking-[0.25em] text-[#cf6f12]">
+              <p className="text-2xl font-bold tracking-[0.25em] text-[var(--brand-orange)]">
                 BURGUS
               </p>
-              <p className="text-[11px] uppercase tracking-[0.38em] text-[#cf6f12]">
+              <p className="text-[11px] uppercase tracking-[0.38em] text-[var(--brand-orange)]">
                 WE MEET YOUR NEEDS
               </p>
             </div>
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-medium md:flex">
-            <a href="#about" className="transition hover:text-[#cf6f12]">
+            <a href="#about" className="transition hover:text-[var(--brand-orange)]">
               {t.navAbout}
             </a>
-            <a href="#capabilities" className="transition hover:text-[#cf6f12]">
+            <a href="#capabilities" className="transition hover:text-[var(--brand-orange)]">
               {t.navCapabilities}
             </a>
-            <a href="#partners" className="transition hover:text-[#cf6f12]">
+            <a href="#partners" className="transition hover:text-[var(--brand-orange)]">
               {t.navPartners}
             </a>
-            <a href="#clients" className="transition hover:text-[#cf6f12]">
+            <a href="#clients" className="transition hover:text-[var(--brand-orange)]">
               {t.navClients}
             </a>
-            <a href="#contact" className="transition hover:text-[#cf6f12]">
+            <a href="#contact" className="transition hover:text-[var(--brand-orange)]">
               {t.navContact}
             </a>
           </nav>
@@ -326,7 +326,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 type="button"
                 onClick={() => setLang("sl")}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
-                  lang === "sl" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
+                  lang === "sl" ? "bg-[var(--brand-orange)] text-white" : "text-[var(--brand-orange)]"
                 }`}
               >
                 SL
@@ -335,7 +335,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 type="button"
                 onClick={() => setLang("en")}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
-                  lang === "en" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
+                  lang === "en" ? "bg-[var(--brand-orange)] text-white" : "text-[var(--brand-orange)]"
                 }`}
               >
                 EN
@@ -344,7 +344,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
             <a
               href="#contact"
-              className="rounded-full border border-[#cf6f12] px-5 py-2 text-sm font-semibold text-[#cf6f12] transition hover:bg-[#cf6f12] hover:text-white"
+              className="rounded-full border border-[var(--brand-orange)] px-5 py-2 text-sm font-semibold text-[var(--brand-orange)] transition hover:bg-[var(--brand-orange)] hover:text-white"
             >
               {t.ctaInquiry}
             </a>
@@ -358,17 +358,17 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
           >
             <div className="flex flex-col gap-1.5">
               <span
-                className={`block h-0.5 w-5 bg-[#cf6f12] transition ${
+                className={`block h-0.5 w-5 bg-[var(--brand-orange)] transition ${
                   menuOpen ? "translate-y-2 rotate-45" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 bg-[#cf6f12] transition ${
+                className={`block h-0.5 w-5 bg-[var(--brand-orange)] transition ${
                   menuOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 bg-[#cf6f12] transition ${
+                className={`block h-0.5 w-5 bg-[var(--brand-orange)] transition ${
                   menuOpen ? "-translate-y-2 -rotate-45" : ""
                 }`}
               />
@@ -379,23 +379,23 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         {menuOpen && (
           <div className="border-t border-black/10 bg-[#f7f0e6]/95 px-6 py-5 md:hidden">
             <div className="mx-auto flex max-w-7xl flex-col gap-4">
-              <a href="#about" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
+              <a href="#about" onClick={closeMenu} className="text-sm font-medium hover:text-[var(--brand-orange)]">
                 {t.navAbout}
               </a>
               <a
                 href="#capabilities"
                 onClick={closeMenu}
-                className="text-sm font-medium hover:text-[#cf6f12]"
+                className="text-sm font-medium hover:text-[var(--brand-orange)]"
               >
                 {t.navCapabilities}
               </a>
-              <a href="#partners" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
+              <a href="#partners" onClick={closeMenu} className="text-sm font-medium hover:text-[var(--brand-orange)]">
                 {t.navPartners}
               </a>
-              <a href="#clients" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
+              <a href="#clients" onClick={closeMenu} className="text-sm font-medium hover:text-[var(--brand-orange)]">
                 {t.navClients}
               </a>
-              <a href="#contact" onClick={closeMenu} className="text-sm font-medium hover:text-[#cf6f12]">
+              <a href="#contact" onClick={closeMenu} className="text-sm font-medium hover:text-[var(--brand-orange)]">
                 {t.navContact}
               </a>
 
@@ -405,7 +405,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                     type="button"
                     onClick={() => setLang("sl")}
                     className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
-                      lang === "sl" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
+                      lang === "sl" ? "bg-[var(--brand-orange)] text-white" : "text-[var(--brand-orange)]"
                     }`}
                   >
                     SL
@@ -414,7 +414,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                     type="button"
                     onClick={() => setLang("en")}
                     className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
-                      lang === "en" ? "bg-[#cf6f12] text-white" : "text-[#cf6f12]"
+                      lang === "en" ? "bg-[var(--brand-orange)] text-white" : "text-[var(--brand-orange)]"
                     }`}
                   >
                     EN
@@ -424,7 +424,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 <a
                   href="#contact"
                   onClick={closeMenu}
-                  className="rounded-full border border-[#cf6f12] px-4 py-2 text-sm font-semibold text-[#cf6f12]"
+                  className="rounded-full border border-[var(--brand-orange)] px-4 py-2 text-sm font-semibold text-[var(--brand-orange)]"
                 >
                   {t.ctaInquiry}
                 </a>
@@ -448,7 +448,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 ></div>
 
         <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:44px_44px] opacity-30" />
-        <div className="absolute -right-24 top-16 h-80 w-80 rounded-full bg-[#cf6f12]/20 blur-3xl" />
+        <div className="absolute -right-24 top-16 h-80 w-80 rounded-full bg-[var(--brand-orange)]/20 blur-3xl" />
         <div className="absolute left-[-5rem] top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-white/70 blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-[1.08fr_0.92fr] md:py-32">
@@ -458,7 +458,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               <span>{t.badge}</span>
             </div>
 
-            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#cf6f12]">
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[var(--brand-orange)]">
               {t.company}
             </p>
 
@@ -475,14 +475,14 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#capabilities"
-                className="rounded-full bg-[#cf6f12] px-7 py-3.5 font-semibold text-white shadow-lg shadow-[#cf6f12]/20 transition hover:-translate-y-[1px] hover:bg-[#b85f0b]"
+                className="rounded-full bg-[var(--brand-orange)] px-7 py-3.5 font-semibold text-white shadow-lg shadow-[var(--brand-orange)]/20 transition hover:-translate-y-[1px] hover:bg-[#b85f0b]"
               >
                 {t.ctaExplore}
               </a>
 
               <a
                 href="/burgus-company-presentation.pdf"
-                className="rounded-full border border-black/15 bg-white/80 px-7 py-3.5 font-semibold text-slate-800 backdrop-blur transition hover:border-[#cf6f12] hover:text-[#cf6f12]"
+                className="rounded-full border border-black/15 bg-white/80 px-7 py-3.5 font-semibold text-slate-800 backdrop-blur transition hover:border-[var(--brand-orange)] hover:text-[var(--brand-orange)]"
               >
                 {t.ctaDownload}
               </a>
@@ -490,7 +490,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#cf6f12]/20 to-white/40 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[var(--brand-orange)]/20 to-white/40 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-black/10 bg-slate-950 text-white shadow-2xl">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,158,61,0.35),transparent_28%)]" />
               <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:32px_32px] opacity-20" />
@@ -516,7 +516,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                     </div>
 
                     <div className="flex justify-center md:justify-start">
-                      <p className="text-xl font-semibold uppercase tracking-[0.18em] text-[#cf6f12]">
+                      <p className="text-xl font-semibold uppercase tracking-[0.18em] text-[var(--brand-orange)]">
                         WE MEET YOUR
                         <br />
                         NEEDS
@@ -542,7 +542,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                   ))}
                 </div>
 
-                <div className="mt-8 rounded-2xl border border-[#cf6f12]/30 bg-[#cf6f12]/10 p-5">
+                <div className="mt-8 rounded-2xl border border-[var(--brand-orange)]/30 bg-[var(--brand-orange)]/10 p-5">
                   <p className="text-xs uppercase tracking-[0.3em] text-[#ffd3a0]">
                     {t.direction}
                   </p>
@@ -558,7 +558,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
       <section id="about" className="border-b border-black/10 bg-white/60 py-24 backdrop-blur-sm">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#cf6f12]">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--brand-orange)]">
               {t.aboutEyebrow}
             </p>
             <h2 className="mt-4 text-4xl font-bold tracking-tight">{t.aboutTitle}</h2>
@@ -566,14 +566,14 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-[2rem] border border-black/10 bg-[#faf4ea] p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#cf6f12]">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
                 {t.aboutProfile}
               </p>
               <p className="mt-5 leading-8 text-slate-600">{t.aboutProfileText}</p>
             </div>
 
             <div className="rounded-[2rem] border border-black/10 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#cf6f12]">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
                 {t.aboutApproach}
               </p>
               <p className="mt-5 leading-8 text-slate-600">{t.aboutApproachText}</p>
@@ -586,7 +586,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#cf6f12]">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--brand-orange)]">
                 {t.capabilitiesEyebrow}
               </p>
               <h2 className="mt-4 text-4xl font-bold tracking-tight">{t.capabilitiesTitle}</h2>
@@ -601,12 +601,12 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 key={item.title}
                 className="group rounded-[2rem] border border-black/10 bg-white/90 p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#cf6f12]/10 text-sm font-bold text-[#cf6f12]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--brand-orange)]/10 text-sm font-bold text-[var(--brand-orange)]">
                   0{index + 1}
                 </div>
                 <h3 className="mt-6 text-xl font-semibold tracking-tight">{item.title}</h3>
                 <p className="mt-4 leading-7 text-slate-600">{item.text}</p>
-                <div className="mt-6 h-px w-full bg-gradient-to-r from-[#cf6f12]/40 to-transparent" />
+                <div className="mt-6 h-px w-full bg-gradient-to-r from-[var(--brand-orange)]/40 to-transparent" />
               </div>
             ))}
           </div>
@@ -615,7 +615,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
       <section id="partners" className="overflow-hidden border-b border-black/10 bg-white/65 py-24">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#cf6f12]">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--brand-orange)]">
             {t.partnersEyebrow}
           </p>
           <h2 className="mt-4 text-4xl font-bold tracking-tight">{t.partnersTitle}</h2>
@@ -645,7 +645,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#cf6f12]">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--brand-orange)]">
                 {t.clientsEyebrow}
               </p>
               <h2 className="mt-4 text-4xl font-bold tracking-tight">{t.clientsTitle}</h2>
@@ -671,12 +671,12 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
             <div className="rounded-[2rem] border border-black/10 bg-white/90 p-8 shadow-sm">
               <div className="flex items-center gap-4">
                 <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-24 w-auto" />
-                <p className="text-sm font-semibold tracking-[0.35em] text-[#cf6f12]">
+                <p className="text-sm font-semibold tracking-[0.35em] text-[var(--brand-orange)]">
                   WE MEET YOUR NEEDS
                 </p>
               </div>
 
-              <p className="mt-8 text-sm font-semibold uppercase tracking-[0.3em] text-[#cf6f12]">
+              <p className="mt-8 text-sm font-semibold uppercase tracking-[0.3em] text-[var(--brand-orange)]">
                 {t.contactEyebrow}
               </p>
               <h2 className="mt-4 text-3xl font-bold tracking-tight">{t.contactTitle}</h2>
@@ -723,7 +723,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                   autoComplete="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[#cf6f12]"
+                  className="rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[var(--brand-orange)]"
                   placeholder={t.namePlaceholder}
                   required
                 />
@@ -732,7 +732,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                   autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[#cf6f12]"
+                  className="rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[var(--brand-orange)]"
                   placeholder={t.emailPlaceholder}
                   required
                 />
@@ -742,7 +742,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 rows={6}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="mt-5 w-full rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[#cf6f12]"
+                className="mt-5 w-full rounded-2xl border border-black/10 bg-[#fcfaf6] px-5 py-4 outline-none transition focus:border-[var(--brand-orange)]"
                 placeholder={t.messagePlaceholder}
                 required
               />
@@ -750,7 +750,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="mt-5 rounded-full bg-[#cf6f12] px-7 py-3.5 font-semibold text-white transition hover:bg-[#b85f0b] disabled:cursor-not-allowed disabled:opacity-70"
+                className="mt-5 rounded-full bg-[var(--brand-orange)] px-7 py-3.5 font-semibold text-white transition hover:bg-[#b85f0b] disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {isSubmitting ? t.sending : t.send}
               </button>
