@@ -3,4 +3,6 @@
 @tailwind utilities;
 :root {
   --brand-orange: #cf6f12;
+  --brand-orange-light: #e07b1f;
+  --brand-orange-soft: #ffb05f;
 }
