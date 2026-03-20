@@ -448,7 +448,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 ></div>
 
         <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:44px_44px] opacity-30" />
-        <div className="absolute -right-24 top-16 h-80 w-80 rounded-full bg-[#ff9e3d]/20 blur-3xl" />
+        <div className="absolute -right-24 top-16 h-80 w-80 rounded-full bg-[#cf6f12]/20 blur-3xl" />
         <div className="absolute left-[-5rem] top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-white/70 blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-[1.08fr_0.92fr] md:py-32">
@@ -490,7 +490,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#ff9e3d]/20 to-white/40 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#cf6f12]/20 to-white/40 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-black/10 bg-slate-950 text-white shadow-2xl">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,158,61,0.35),transparent_28%)]" />
               <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:32px_32px] opacity-20" />
@@ -542,7 +542,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                   ))}
                 </div>
 
-                <div className="mt-8 rounded-2xl border border-[#ffb05f]/30 bg-[#ffb05f]/10 p-5">
+                <div className="mt-8 rounded-2xl border border-[#cf6f12]/30 bg-[#cf6f12]/10 p-5">
                   <p className="text-xs uppercase tracking-[0.3em] text-[#ffd3a0]">
                     {t.direction}
                   </p>
