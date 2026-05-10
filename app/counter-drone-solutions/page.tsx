@@ -52,9 +52,9 @@ const translations = {
     capability1Title: "Obrambni program - Counter-UAS sistemi",
     capability1Text:
       "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike. Sodelujemo z uveljavljenimi mednarodnimi podjetji, ki razvijajo napredne tehnološke rešitve na področju varnosti, nadzora in zaščite pred brezpilotnimi sistemi. Našim naročnikom omogočamo dostop do preverjenih tehnologij ter strokovno podporo pri njihovi uvedbi.",
-    capability2Title: "Strelivo proti dronom 40mm in 5.56x45 ter 7.62x51mm",
+    capability2Title: "Kinetična rešitev proti dronom",
     capability2Text:
-      "SKYSWARM C-UAS predstavlja napredno večprojektilno strelivo za učinkovito delovanje proti brezpilotnim zračnim sistemom in rojem dronov. Sistem uporablja standardno pehotno orožje brez dodatnih prilagoditev ter omogoča povečano verjetnost zadetka hitro premikajočih se zračnih ciljev. Rešitev zagotavlja hitro, učinkovito in stroškovno racionalno zaščito vojaških enot, kritične infrastrukture in varnostnih območij pred sodobnimi zračnimi grožnjami. Na voljo v kalibrih 5.56x41mm, 7.62x51mm in od proizvajalca ST Engineering kaliber 40mm za uporabo z avtomatskim metalcem granat.",
+      "Napredno večprojektilno strelivo za učinkovito delovanje proti brezpilotnim zračnim sistemom in rojem dronov. Uporaba standardnega pehotnega orožja brez dodatnih prilagoditev. Rešitev zagotavlja hitro, učinkovito in stroškovno racionalno zaščito vojaških enot, kritične infrastrukture in varnostnih območij pred sodobnimi zračnimi grožnjami. Na voljo v različnih kalibrih.",
     capability3Title: "Termalne in nadzorne rešitve",
     capability3Text:
       "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
