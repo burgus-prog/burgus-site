@@ -49,10 +49,10 @@ const translations = {
     capabilitiesText:
       "Vsebina je razdeljena v jasne vsebinske sklope, ki omogočajo hiter pregled dejavnosti, kompetenc in sodelovanj.",
 
-    capability1Title: "Obrambni program - Counter-UAS sistemi",
+    capability1Title: "Obrambni program - elektronski Counter-UAS sistemi",
     capability1Text:
       "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike. Sodelujemo z uveljavljenimi mednarodnimi podjetji, ki razvijajo napredne tehnološke rešitve na področju varnosti, nadzora in zaščite pred brezpilotnimi sistemi. Našim naročnikom omogočamo dostop do preverjenih tehnologij ter strokovno podporo pri njihovi uvedbi.",
-    capability2Title: "Kinetična rešitev proti dronom",
+    capability2Title: "Kinetične rešitve proti dronom",
     capability2Text:
       "Napredno večprojektilno strelivo za učinkovito delovanje proti brezpilotnim zračnim sistemom in rojem dronov. Uporaba standardnega pehotnega orožja brez dodatnih prilagoditev. Rešitev zagotavlja hitro, učinkovito in stroškovno racionalno zaščito vojaških enot, kritične infrastrukture in varnostnih območij pred sodobnimi zračnimi grožnjami. Na voljo v različnih kalibrih.",
     capability3Title: "Termalne in nadzorne rešitve",
@@ -135,12 +135,12 @@ const translations = {
     capabilitiesText:
       "The content is divided into clear sections that allow a quick overview of activities, competencies and cooperation.",
 
-    capability1Title: "Defence programme",
+    capability1Title: "Defence programme - Counter-UAS Systems",
     capability1Text:
-      "Supply of specialised equipment, systems and support solutions for military, police and other institutional users.",
-    capability2Title: "Counter-UAS systems",
+      "Supply of specialised equipment, systems, and support solutions for military, police, and other institutional users. We cooperate with established international companies developing advanced technological solutions in the fields of security, surveillance, and protection against unmanned aerial systems. We provide our clients with access to proven technologies and professional support during implementation and integration processes.",
+    capability2Title: "Kinetic Counter - Drone Solutions",
     capability2Text:
-      "Solutions for detection, analysis and response to unmanned system threats in various operational environments.",
+      "Advanced multi-projectile ammunition designed for effective engagement against unmanned aerial systems and drone swarms. Utilises standard infantry weapons without requiring additional modifications. The solution provides rapid, effective, and cost-efficient protection for military units, critical infrastructure, and security zones against modern aerial threats. Available in multiple calibres.",
     capability3Title: "Thermal and surveillance solutions",
     capability3Text:
       "Thermal devices, surveillance systems and equipment for observation, protection and safeguarding of critical infrastructure.",
