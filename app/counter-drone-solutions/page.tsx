@@ -512,7 +512,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
                     <div className="flex justify-center">
                       <img
-                        src="/burgus-logo-960-.png"
+                        src="/burgus-logo-960.png"
                         alt="BURGUS logo"
                         className="h-20 w-auto"
                       />
