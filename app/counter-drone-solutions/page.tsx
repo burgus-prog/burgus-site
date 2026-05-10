@@ -512,7 +512,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
                     <div className="flex justify-center">
                       <img
-                        src="/burgus-logo-960.png"
+                        src="/burgus-logo-960-.png"
                         alt="BURGUS logo"
                         className="h-20 w-auto"
                       />
@@ -673,7 +673,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
           <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
             <div className="rounded-[2rem] border border-black/10 bg-white/90 p-8 shadow-sm">
               <div className="flex items-center gap-4">
-                <img src="/burgus-logo-960.png" alt="BURGUS logo" className="h-24 w-auto" />
+                <img src="/burgus-logo-960-.png" alt="BURGUS logo" className="h-24 w-auto" />
                 <p className="text-sm font-semibold tracking-[0.35em] text-[var(--brand-orange)]">
                   WE MEET YOUR NEEDS
                 </p>
