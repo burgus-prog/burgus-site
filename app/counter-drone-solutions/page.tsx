@@ -49,20 +49,17 @@ const translations = {
     capabilitiesText:
       "Vsebina je razdeljena v jasne vsebinske sklope, ki omogočajo hiter pregled dejavnosti, kompetenc in sodelovanj.",
 
-    capability1Title: "Obrambni program",
+    capability1Title: "Obrambni program - Counter-UAS sistemi",
     capability1Text:
-      "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike.",
-    capability2Title: "Strelivo proti dronom 40mm in 5,56x45",
+      "Dobava specializirane opreme, sistemov in podpornih rešitev za vojaške, policijske in druge institucionalne uporabnike. Sodelujemo z uveljavljenimi mednarodnimi podjetji, ki razvijajo napredne tehnološke rešitve na področju varnosti, nadzora in zaščite pred brezpilotnimi sistemi. Našim naročnikom omogočamo dostop do preverjenih tehnologij ter strokovno podporo pri njihovi uvedbi.",
+    capability2Title: "Strelivo proti dronom 40mm in 5.56x45 ter 7.62x51mm",
     capability2Text:
-      "SKYSWARM C-UAS predstavlja napredno večprojektilno strelivo za učinkovito delovanje proti brezpilotnim zračnim sistemom in rojem dronov. Sistem uporablja standardno pehotno orožje brez dodatnih prilagoditev ter omogoča povečano verjetnost zadetka hitro premikajočih se zračnih ciljev. Rešitev zagotavlja hitro, učinkovito in stroškovno racionalno zaščito vojaških enot, kritične infrastrukture in varnostnih območij pred sodobnimi zračnimi grožnjami. Na voljo v kalibrih 5.56x41mm, 7.62x51mm in 40mm za uporabo z avtomatskim metalcem granat.",
-    capability3Title: "Counter-UAS sistemi",
+      "SKYSWARM C-UAS predstavlja napredno večprojektilno strelivo za učinkovito delovanje proti brezpilotnim zračnim sistemom in rojem dronov. Sistem uporablja standardno pehotno orožje brez dodatnih prilagoditev ter omogoča povečano verjetnost zadetka hitro premikajočih se zračnih ciljev. Rešitev zagotavlja hitro, učinkovito in stroškovno racionalno zaščito vojaških enot, kritične infrastrukture in varnostnih območij pred sodobnimi zračnimi grožnjami. Na voljo v kalibrih 5.56x41mm, 7.62x51mm in proizvajalca ST Engineering kaliber 40mm za uporabo z avtomatskim metalcem granat.",
+    capability3Title: "Termalne in nadzorne rešitve",
     capability3Text:
-      "Sodelujemo z uveljavljenimi mednarodnimi podjetji, ki razvijajo napredne tehnološke rešitve na področju varnosti, nadzora in zaščite pred brezpilotnimi sistemi. Našim naročnikom omogočamo dostop do preverjenih tehnologij ter strokovno podporo pri njihovi uvedbi.",
-    capability4Title: "Termalne in nadzorne rešitve",
-    capability4Text:
       "Termalne naprave, nadzorni sistemi ter oprema za opazovanje, varovanje in zaščito kritične infrastrukture.",
-    capability5Title: "Mednarodni projekti",
-    capability5Text:
+    capability4Title: "Mednarodni projekti",
+    capability4Text:
       "Strokovna podpora pri sodelovanju z vodilnimi mednarodnimi proizvajalci ter pri načrtovanju in izvedbi zahtevnih tehnoloških projektov.",
 
     partnersEyebrow: "Partnerji",
