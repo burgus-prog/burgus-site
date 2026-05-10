@@ -200,7 +200,7 @@ export default function BurgusWebsite() {
     { name: "Saes", logo: "/partners/saes.png", url: "https://electronica-submarina.com/en/" },
     { name: "Edi-USA", logo: "/partners/edi-usa.png", url: "https://execdefense.com/" },
     { name: "Droptec", logo: "/partners/droptec.png", url: "https://droptec.ch" },
-    { name: "ST Engineering", logo: "/partners/ST Engineering logo1.svg", url: "https://www.stengg.com" },
+    { name: "ST Engineering", logo: "/partners/ST Engineering Logo.svg", url: "https://www.stengg.com" },
     { name: "SkySwarm", logo: "/partners/cqc-logo-Skyswarm.png", url: "https://cqc.co.uk/skyswarm" },
   ];
 
